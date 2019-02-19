@@ -18,7 +18,7 @@ import frc.robot.RobotMap;
 public class Launcher extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
-  DoubleSolenoid launchSolenoid = null;
+  DoubleSolenoid launchSolenoid;
 
   public void launcher(){
     launchSolenoid = new DoubleSolenoid(RobotMap.SHOOTER_PITCHSOLENOID_DEPLOY, RobotMap.SHOOTER_PITCHSOLENOID_RETRACT);

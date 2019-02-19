@@ -27,11 +27,11 @@ import frc.robot.subsystems.Launcher;
  * project.
  */
 public class Robot extends TimedRobot {
-  public static ExampleSubsystem m_subsystem = new ExampleSubsystem();
-  public static Drivetrain m_drivetrain = new Drivetrain();
-  public static Elevator m_elevator = new Elevator();
-  public static Launcher m_launcher = new Launcher();
-  public static OI m_oi = new OI();
+  public static ExampleSubsystem m_subsystem;
+  public static Drivetrain m_drivetrain;
+  public static Elevator m_elevator;
+  public static Launcher m_launcher;
+  public static OI m_oi;
 
 
   Command m_autonomousCommand;
@@ -39,13 +39,12 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
-    /*
     m_oi = new OI();
     m_drivetrain = new Drivetrain();
     m_elevator = new Elevator();
     m_launcher = new Launcher();
-    m_forks = new Forks();
-    */
+    
+
     CameraServer.getInstance().startAutomaticCapture();
 
     m_chooser.setDefaultOption("Default Auto", new ExampleCommand());

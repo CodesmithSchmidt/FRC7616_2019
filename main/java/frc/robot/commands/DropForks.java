@@ -14,7 +14,7 @@ public class DropForks extends Command {
   public DropForks() {
     // Use requires() here to declare subsystem dependencies
     // eg. requires(chassis);
-    requires(Robot.m_elevator);
+    //requires(Robot.m_elevator);
   }
 
   // Called just before this Command runs the first time

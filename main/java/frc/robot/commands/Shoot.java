@@ -21,7 +21,7 @@ public class Shoot extends InstantCommand {
     super();
     // Use requires() here to declare subsystem dependencies
     // eg. requires(chassis);
-    requires(Robot.m_launcher);
+    //requires(Robot.m_launcher);
   }
 
   // Called once when the command executes
